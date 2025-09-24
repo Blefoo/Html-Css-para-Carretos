@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreto Leva e Traz - Solicitar Serviço</title>
+    <link rel="stylesheet" href="solicitarserviço.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="azulesc">
+            <div class="email-area">
+                <img src="../imagens/email icone.png" alt="Email Icone" class="emailimg">
+                <a href="mailto:carretolevaetraz@gmail.com">carretolevaetraz@gmail.com</a>
+            </div>
+            <img src="../imagens/levaetraz.png" alt="Leva e Traz" class="iconeimg">
+            <div class="telefone-area">
+                <img src="../imagens/telefone.png" alt="Telefone Icone" class="telefoneimg">
+                <a href="tel:+5511987654321"> +55 (11) 987654321 </a>
+            </div>
+        </div>
+
+        <div class="menubranco">
+            <nav class="menu-area">
+                <a href="index.html">Início</a>
+                <a href="tabela.html">Tabela de Preços</a>
+                <a href="#" class="solicitar">Solicitar Carreto</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="sobrenos.html">Sobre Nós</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="imagem-meio">
+            <div class="form-layout">
+                <div class="lado-esquerdo">
+                    <h2>Solicite seu carreto com segurança!</h2>
+                    <p>Preencha o formulário ao lado e receba um retorno rápido sobre seu pedido.</p>
+                    <hr>
+                    <h3>Carreto Prático</h3>
+                    <p>Carregamos, transportamos e entregamos tudo com cuidado, para qualquer<br>região dentro da cidade de São Paulo e região metropolitana.</p>
+                    <h3>Carreto com preço justo</h3>
+                    <p>Sem taxas escondidas, sem surpresas. Nosso serviço de carreto é<br>profissional e com um preço justo.</p>
+                    <img src="../imagens/caminhão de entrega.gif">
+                </div>
+                <div class="branco-form">
+                    <form action="enviado.html" method="get">
+                        <fieldset>
+                            <legend>Solicite um Serviço</legend>
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Ex: Bruno Lima">
+                            <br>
+                            <label for="telefone">Telefone / Whatsapp:</label>
+                            <input type="tel" id="telefone" name="telefone" required placeholder="Ex: +55 (99) 99999-9999">
+                            <br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="bruno@gmail.com">
+                            <br>
+                            <label for="origem">Endereço de Origem:</label>
+                            <input type="text" id="origem" name="origem" required placeholder="São Paulo, Rua São João">
+                            <br>
+                            <label for="destino">Endereço de destino:</label>
+                            <input type="text" id="destino" name="destino" required placeholder="São Paulo, Rua São José">
+                            <br>
+                            <label for="data">Data do serviço:</label>
+                            <input type="date" id="data" name="data" required>
+                            <br>
+                            <label for="servico">Tipo de serviço:</label>
+                            <select id="servico" name="servico" required>
+                            <option value="">Selecione</option>
+                            <option value="mudanca">Mudança</option>
+                            <option value="entrega">Entrega</option>
+                            <option value="outro">Outro</option>
+                            </select>
+                            <br>
+                            <label for="observacoes">Observações:</label>
+                            <textarea id="observacoes" name="observacoes" rows="4" style="max-width: 17vw; max-height: 18vh;"></textarea>
+                            <br>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="cinzaclaro">
+            <p>Carreto Leva e Traz – Empresa de Carreto e Pequenos Transportes em São Paulo © 2023 | Todos os direitos reservados. Feito com amor pelo Bruno Lima </p>
+        </div>
+    </footer>
+</body>
+</html>
